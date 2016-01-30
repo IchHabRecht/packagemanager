@@ -1,0 +1,25 @@
+{
+  "name": "ichhabrecht/packagemanager",
+  "description": "GUI for composer package management",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "package",
+    "packagemanager",
+    "composer"
+  ],
+  "homepage": "http://www.cps-it.de",
+  "authors": [
+    {
+      "name": "Nicole Cordes",
+      "role": "Developer",
+      "homepage": "http://www.cps-it.de"
+    }
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "require": {
+  	"composer/composer": "1.0.0-alpha11"
+  }
+}
