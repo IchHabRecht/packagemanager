@@ -32,7 +32,7 @@ script:
   - >
     echo;
     echo "Running unit tests";
-    bin/phpunit --colors tests
+    vendor/bin/phpunit --colors tests
 
   - >
     echo;
