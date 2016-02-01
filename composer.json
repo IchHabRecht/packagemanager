@@ -25,9 +25,14 @@
   "require-dev": {
   	"phpunit/phpunit": "~4.8.0"
   },
+  "autoload": {
+    "psr-4": {
+      "IchHabRecht\\Packagemanager\\": "src/Packagemanager"
+    }
+  },
   "autoload-dev": {
     "psr-4": {
-      "IchHabRecht\\Tests\\": "tests/Packagemanager"
+      "IchHabRecht\\Packagemanager\\Tests\\": "tests/Packagemanager"
     }
   }
 }

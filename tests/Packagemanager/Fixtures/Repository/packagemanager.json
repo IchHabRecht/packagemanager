@@ -1,0 +1,40 @@
+{
+  "name": "ichhabrecht\/packagemanager",
+  "description": "GUI for composer package management",
+  "keywords": [
+    "package",
+    "composer",
+    "extension",
+    "typo3",
+    "packagemanager"
+  ],
+  "homepage": "http:\/\/www.cps-it.de",
+  "version": "1.0",
+  "version_normalized": "1.0.0.0",
+  "license": [
+    "GPL-2.0+"
+  ],
+  "authors": [
+    {
+      "name": "Nicole Cordes",
+      "homepage": "http:\/\/www.cps-it.de",
+      "role": "Developer"
+    }
+  ],
+  "source": {
+    "type": "git",
+    "url": "https:\/\/github.com\/IchHabRecht\/packagemanager.git",
+    "reference": "0a53a0cb2e812851e4bf3ad9725b78a9f17aade0"
+  },
+  "dist": {
+    "type": "zip",
+    "url": "https:\/\/api.github.com\/repos\/IchHabRecht\/packagemanager\/zipball\/0a53a0cb2e812851e4bf3ad9725b78a9f17aade0",
+    "reference": "0a53a0cb2e812851e4bf3ad9725b78a9f17aade0",
+    "shasum": ""
+  },
+  "type": "library",
+  "time": "2016-01-30T11:46:55+00:00",
+  "require": {
+    "composer\/composer": "^1.0"
+  }
+}
