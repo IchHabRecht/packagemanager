@@ -1,9 +1,10 @@
 <?php
-namespace IchHabRecht\Packagemanager\Tests;
+namespace IchHabRecht\Packagemanager\Tests\Functional;
 
 use Composer\Config;
 use Composer\Console\Application;
 use Composer\Util\Filesystem;
+use IchHabRecht\Packagemanager\Tests\TestCase;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -28,7 +29,7 @@ abstract class ComposerTestCase extends TestCase
     {
         // Reset packagist repository
         Config::$defaultRepositories = [
-            'packagemanager' => [
+            'packagemanager-1-0' => [
                 'type' => 'package',
                 'package' => json_decode(file_get_contents(
                     implode(
@@ -37,7 +38,8 @@ abstract class ComposerTestCase extends TestCase
                             __DIR__,
                             'Fixtures',
                             'Repository',
-                            'packagemanager.json',
+                            'packagemanager',
+                            '1-0.json',
                         ]
                     )
                 ), true),

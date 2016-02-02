@@ -33,8 +33,5 @@
     "shasum": ""
   },
   "type": "library",
-  "time": "2016-01-30T11:46:55+00:00",
-  "require": {
-    "composer\/composer": "^1.0"
-  }
+  "time": "2016-01-30T11:46:55+00:00"
 }
