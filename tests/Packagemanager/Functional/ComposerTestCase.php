@@ -44,6 +44,36 @@ abstract class ComposerTestCase extends TestCase
                     )
                 ), true),
             ],
+            'packagemanager-2-0' => [
+                'type' => 'package',
+                'package' => json_decode(file_get_contents(
+                    implode(
+                        DIRECTORY_SEPARATOR,
+                        [
+                            __DIR__,
+                            'Fixtures',
+                            'Repository',
+                            'packagemanager',
+                            '2-0.json',
+                        ]
+                    )
+                ), true),
+            ],
+            'packagemanager-3-0' => [
+                'type' => 'package',
+                'package' => json_decode(file_get_contents(
+                    implode(
+                        DIRECTORY_SEPARATOR,
+                        [
+                            __DIR__,
+                            'Fixtures',
+                            'Repository',
+                            'packagemanager',
+                            '3-0.json',
+                        ]
+                    )
+                ), true),
+            ],
         ];
 
         self::$tempDirectory = rtrim(sys_get_temp_dir(), DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
