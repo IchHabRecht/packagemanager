@@ -1,10 +1,35 @@
 <?php
 namespace IchHabRecht\Packagemanager\Tests\Functional;
 
+use Composer\Config;
 use Symfony\Component\Console\Output\BufferedOutput;
 
-class OutputTest extends ComposerTestCase
+class ComposerOutputIntegrity extends ComposerTestCase
 {
+    protected function setUp()
+    {
+        parent::setUp();
+
+        // Reset packagist repository
+        Config::$defaultRepositories = [
+            'packagemanager-1-0' => [
+                'type' => 'package',
+                'package' => json_decode(file_get_contents(
+                    implode(
+                        DIRECTORY_SEPARATOR,
+                        [
+                            __DIR__,
+                            'Fixtures',
+                            'Repository',
+                            'packagemanager',
+                            '1-0.json',
+                        ]
+                    )
+                ), true),
+            ],
+        ];
+    }
+
     public function testComposerOutputForRequireIsIntact()
     {
         $bufferedOutput = new BufferedOutput();
